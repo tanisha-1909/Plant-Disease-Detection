@@ -179,7 +179,8 @@ elif app_mode == "🦠 Disease Recognition":
     st.header("Plant Disease Recognition System")
     st.markdown("<h4 style='color:#1b5e20'>📤 Upload Plant Image:</h4>", unsafe_allow_html=True)
 
-    test_image = st.file_uploader("", type=["jpg", "jpeg", "png"], label_visibility="collapsed")
+    test_image = st.file_uploader("Upload plant image", type=["jpg", "jpeg", "png"], label_visibility="collapsed")
+
 
     if st.button("Show Image"):
         if test_image is not None:
