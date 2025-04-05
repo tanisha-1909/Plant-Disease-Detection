@@ -89,7 +89,8 @@ app_mode = st.sidebar.selectbox(
 
 if app_mode == "🏠 Home":
     st.header("🌾 PLANT DISEASE RECOGNITION SYSTEM")
-    st.image("home_page.jpeg", use_column_width=True)
+    st.image("home_page.jpeg", use_container_width=True)
+
 
     st.markdown("""
     # 🌱 Welcome to the Plant Health Detector!
@@ -138,25 +139,25 @@ elif app_mode == "📚 About":
     - Trained using Keras CNN on augmented data
     """)
 
-    st.markdown("## 👩‍👩‍👧 Meet the Team")
+    # st.markdown("## 👩‍👩‍👧 Meet the Team")
 
-    col1, col2 = st.columns(2)
+    # col1, col2 = st.columns(2)
 
-    with col1:
-        st.image("Yash.jpeg", caption="Yash Verma", use_column_width=True, output_format="JPEG", channels="RGB", clamp=False)
-        st.markdown("""
-        **Yash Verma**  
-        💻 B.Tech CSE  
-        🔗 [LinkedIn](https://www.linkedin.com/in/yash-verma-b41221241/)  
-        """, unsafe_allow_html=True)
+    # with col1:
+    #     st.image("Yash.jpeg", caption="Yash Verma", use_container_width=True, output_format="JPEG", channels="RGB", clamp=False)
+    #     st.markdown("""
+    #     **Yash Verma**  
+    #     💻 B.Tech CSE  
+    #     🔗 [LinkedIn](https://www.linkedin.com/in/yash-verma-b41221241/)  
+    #     """, unsafe_allow_html=True)
 
-    with col2:
-        st.image("tanisha.jpeg", caption="Tanisha Mahavar", use_column_width=True, output_format="JPEG", channels="RGB", clamp=False)
-        st.markdown("""
-        **Tanisha Mahavar**  
-        💻 B.Tech CSE  
-        🔗 [LinkedIn](https://www.linkedin.com/in/tanisha-mahavar-02ba6b25a/)  
-        """, unsafe_allow_html=True)
+    # with col2:
+    #     st.image("tanisha.jpeg", caption="Tanisha Mahavar",use_container_width=True, output_format="JPEG", channels="RGB", clamp=False)
+    #     st.markdown("""
+    #     **Tanisha Mahavar**  
+    #     💻 B.Tech CSE  
+    #     🔗 [LinkedIn](https://www.linkedin.com/in/tanisha-mahavar-02ba6b25a/)  
+    #     """, unsafe_allow_html=True)
 
     
 
@@ -182,7 +183,7 @@ elif app_mode == "🦠 Disease Recognition":
 
     if st.button("Show Image"):
         if test_image is not None:
-            st.image(test_image, use_column_width=True)
+            st.image(test_image, use_container_width=True)
         else:
             st.warning("⚠️ Please upload an image first!")
 
