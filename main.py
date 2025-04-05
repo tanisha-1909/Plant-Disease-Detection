@@ -1,6 +1,8 @@
 import streamlit as st
 import tensorflow as tf
 import numpy as np
+import os
+import gdown
 
 # -----------------------------#
 # 🌿 Custom CSS (Updated)
@@ -70,9 +72,15 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
+model_path = "trained_model.keras"
+if not os.path.exists(model_path):
+    file_id = "1nwGfLDCwkFIT9x_foo9-hMAhHH8LpZMA"
+    url = f"https://drive.google.com/uc?id={file_id}"
+    gdown.download(url, model_path, quiet=False)
+
 
 def model_prediction(test_image):
-    model = tf.keras.models.load_model("trained_model.keras")
+    model = tf.keras.models.load_model(model_path)
     image = tf.keras.preprocessing.image.load_img(test_image, target_size=(128, 128))
     input_arr = tf.keras.preprocessing.image.img_to_array(image)
     input_arr = np.array([input_arr])
