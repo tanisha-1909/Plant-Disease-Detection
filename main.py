@@ -88,7 +88,7 @@ def model_prediction(test_image):
     result_index = np.argmax(prediction)
     return result_index
 
-st.sidebar.title("🌿 Plant Disease App")
+st.sidebar.title("🌿 Plant Disease Detection WebApp")
 app_mode = st.sidebar.selectbox(
     "📍 Select Page",
     ["🏠 Home", "📚 About", "🦠 Disease Recognition"],
@@ -147,25 +147,41 @@ elif app_mode == "📚 About":
     - Trained using Keras CNN on augmented data
     """)
 
-    # st.markdown("## 👩‍👩‍👧 Meet the Team")
+    st.markdown("## 👩‍👩‍👧 Meet the Team")
 
-    # col1, col2 = st.columns(2)
+    col1, col2 ,col3,col4= st.columns(4)
 
-    # with col1:
-    #     st.image("Yash.jpeg", caption="Yash Verma", use_container_width=True, output_format="JPEG", channels="RGB", clamp=False)
-    #     st.markdown("""
-    #     **Yash Verma**  
-    #     💻 B.Tech CSE  
-    #     🔗 [LinkedIn](https://www.linkedin.com/in/yash-verma-b41221241/)  
-    #     """, unsafe_allow_html=True)
+    with col1:
+        st.image("Yash.jpeg", caption="Yash Verma", use_container_width=True, output_format="JPEG", channels="RGB", clamp=False)
+        st.markdown("""
+        **Yash Verma**  
+        💻 B.Tech CSE  
+        🔗 [LinkedIn](https://www.linkedin.com/in/yash-verma-b41221241/)  
+        """, unsafe_allow_html=True)
 
-    # with col2:
-    #     st.image("tanisha.jpeg", caption="Tanisha Mahavar",use_container_width=True, output_format="JPEG", channels="RGB", clamp=False)
-    #     st.markdown("""
-    #     **Tanisha Mahavar**  
-    #     💻 B.Tech CSE  
-    #     🔗 [LinkedIn](https://www.linkedin.com/in/tanisha-mahavar-02ba6b25a/)  
-    #     """, unsafe_allow_html=True)
+    with col2:
+        st.image("tanishamahavar.jpeg", caption="Tanisha Mahavar",use_container_width=True, output_format="JPEG", channels="RGB", clamp=False)
+        st.markdown("""
+        **Tanisha Mahavar**  
+        💻 B.Tech CSE  
+        🔗 [LinkedIn](https://www.linkedin.com/in/tanisha-mahavar-02ba6b25a/)  
+        """, unsafe_allow_html=True)
+
+    with col3:
+        st.image("tanishabansal.jpeg", caption="Tanisha Bansal",use_container_width=True, output_format="JPEG", channels="RGB", clamp=False)
+        st.markdown("""
+        **Tanisha Bansal**  
+        💻 B.Tech CSE  
+        🔗 [LinkedIn](https://www.linkedin.com/in/tanisha-bansal-762b7b255/)  
+        """, unsafe_allow_html=True)
+
+    with col4:
+        st.image("vidit.jpeg", caption="Vidit Shandilya",use_container_width=True, output_format="JPEG", channels="RGB", clamp=False)
+        st.markdown("""
+        **Vidit Shandilya**  
+        💻 B.Tech CSE  
+        🔗 [LinkedIn](https://www.linkedin.com/in/vidit-shandilya-b104b6256/)  
+        """, unsafe_allow_html=True)
 
     
 
