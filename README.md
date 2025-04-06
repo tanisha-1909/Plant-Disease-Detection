@@ -20,17 +20,10 @@ A smart plant disease detection web application built with **Streamlit** and **T
 ## 🧪 Dataset
 - Sourced from the popular **Kaggle**
 - Includes 87,000+ labeled images across **38 distinct classes**
-- Data augmentation techniques used for improving model generalization
 
 ## 🧠 Model Architecture
-  Convolutional Neural Network (CNN)
-  
-  Layers: Conv2D → MaxPool → Dropout → Flatten → Dense
-  
-  Data Augmentation: Rotation, Zoom, Flip
-  
-  Optimizer: Adam
-  
-  Loss Function: Categorical Crossentropy
-  
-  Accuracy: 97%
+- Convolutional Neural Network (CNN)
+- Layers: Conv2D → MaxPool → Dropout → Flatten → Dense
+- Optimizer: Adam
+- Loss Function: Categorical Crossentropy
+- Accuracy: 97%
