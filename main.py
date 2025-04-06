@@ -72,11 +72,11 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-model_path = "trained_model.keras"
-if not os.path.exists(model_path):
-    file_id = "1bId3SKUybn9y3CKmTo8ZDysrp6oBofeo"
-    url = f"https://drive.google.com/uc?id={file_id}"
-    gdown.download(url, model_path, quiet=False)
+model_path = "trained_model.h5"
+file_id = "1bId3SKUybn9y3CKmTo8ZDysrp6oBofeo"
+url = f"https://drive.google.com/uc?id={file_id}"
+gdown.download(url, model_path, quiet=False)
+
 
 
 def model_prediction(test_image):
