@@ -10,11 +10,12 @@ import gdown
 st.markdown("""
     <style>
         .main {
-            background-color: #f0fff0;
+            background-color: #f0fff0 !important;
         }
 
         body {
-            color: #1b5e20;
+            background-color: #f0fff0 !important;
+            color: #1b5e20 !important;
         }
 
         h1, h2, h3, h4, h5, h6 {
@@ -23,17 +24,17 @@ st.markdown("""
 
         .stButton>button {
             color: white !important;
-            background: linear-gradient(to right, #66bb6a, #388e3c);
+            background: linear-gradient(to right, #66bb6a, #388e3c) !important;
             border-radius: 12px;
             font-weight: bold;
         }
 
         .stTextInput>div>div>input {
-            border-radius: 12px;
+            border-radius: 12px !important;
         }
 
         .stMarkdown {
-            color: #1b5e20;
+            color: #1b5e20 !important;
         }
 
         section[data-testid="stSidebar"] {
@@ -53,7 +54,7 @@ st.markdown("""
             width: 100% !important;
             object-fit: cover !important;
             border-radius: 12px !important;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1) !important;
         }
 
         .stAlert {
@@ -63,7 +64,7 @@ st.markdown("""
             border-radius: 10px !important;
             padding: 1rem !important;
             font-size: 1.1rem !important;
-            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+            box-shadow: 0 0 5px rgba(0,0,0,0.1) !important;
         }
 
         .stAlert div, .stAlert span, .stAlert p {
