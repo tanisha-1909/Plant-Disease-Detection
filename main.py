@@ -74,7 +74,7 @@ st.markdown("""
 
 model_path = "trained_model.keras"
 if not os.path.exists(model_path):
-    file_id = "1nwGfLDCwkFIT9x_foo9-hMAhHH8LpZMA"
+    file_id = "1bId3SKUybn9y3CKmTo8ZDysrp6oBofeo"
     url = f"https://drive.google.com/uc?id={file_id}"
     gdown.download(url, model_path, quiet=False)
 
