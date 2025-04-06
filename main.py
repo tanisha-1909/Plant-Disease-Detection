@@ -72,17 +72,14 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-import os
-import gdown
 
+url = "https://drive.google.com/file/d/19miyAapKU1saabVDR050q_Qtyz2Guq_s/view?usp=sharing"
 model_path = "trained_model.h5"
-file_id = "19miyAapKU1saabVDR050q_Qtyz2Guq_s"
-url = f"https://drive.google.com/uc?export=download&id={file_id}"
 
-# Only download if the file doesn't exist
+# Only download if the model is not already downloaded
 if not os.path.exists(model_path):
     print("Model not found locally. Downloading...")
-    gdown.download(url, model_path, quiet=False)
+    gdown.download(url=url, output=model_path, fuzzy=True)
 else:
     print("Model already exists. Skipping download.")
 
