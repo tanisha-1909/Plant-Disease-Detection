@@ -168,7 +168,7 @@ elif app_mode == "📚 About":
         """, unsafe_allow_html=True)
 
     with col3:
-        st.image("https://drive.google.com/file/d/1tfwkzkK_BZAN0_5D87VisuuFDUFhbGoS/view?usp=sharing", caption="Tanisha Bansal",use_container_width=True, output_format="JPEG", channels="RGB", clamp=False)
+        st.image("tanishabansal.jpeg", caption="Tanisha Bansal",use_container_width=True, output_format="JPEG", channels="RGB", clamp=False)
         st.markdown("""
         **Tanisha Bansal**  
         💻 B.Tech CSE  
