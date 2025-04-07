@@ -452,3 +452,5 @@ elif app_mode == "🦠 Disease Recognition":
                 st.info("ℹ️ No additional info available for this disease.")
         else:
             st.warning("⚠️ Please upload an image before prediction!")
+
+# added remedies
