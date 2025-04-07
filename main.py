@@ -4,6 +4,31 @@ import numpy as np
 import os
 import gdown
 
+st.markdown("""
+    <style>
+    .viewerBadge_container__1QSob,
+    .styles_viewerBadge__1yB5_,
+    .viewerBadge_link__1S137,
+    .viewerBadge_text__1JaDK {
+        display: none !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+    <style>
+    #MainMenu, footer, header {
+        visibility: hidden !important;
+    }
+
+    .css-164nlkn, .css-1dp5vir, .viewerBadge_container__1QSob, 
+    .styles_viewerBadge__1yB5_, .viewerBadge_link__1S137, 
+    .viewerBadge_text__1JaDK {
+        display: none !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 # -----------------------------#
 # 🌿 Custom CSS (Updated)
 # -----------------------------#
