@@ -29,6 +29,45 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
+st.markdown("""
+    <style>
+    /* Hide Streamlit "Hosted with Streamlit" badge */
+    a[href*="streamlit.io"] {
+        display: none !important;
+    }
+
+    /* Hide GitHub link/icon */
+    a[href*="github.com"] {
+        display: none !important;
+    }
+
+    /* Optional: Hide main menu, footer, header */
+    #MainMenu, footer, header {
+        visibility: hidden !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+    <style>
+    /* Hide viewer badge and GitHub/Streamlit links */
+    .viewerBadge_container__1QSob,
+    .styles_viewerBadge__1yB5_,
+    .viewerBadge_link__1S137,
+    .viewerBadge_text__1JaDK,
+    a[href*="streamlit.io"],
+    a[href*="github.com"],
+    .css-164nlkn,
+    .css-1dp5vir {
+        display: none !important;
+    }
+
+    /* Hide Streamlit main menu, footer, and header */
+    #MainMenu, footer, header {
+        visibility: hidden !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
 # -----------------------------#
 # 🌿 Custom CSS (Updated)
 # -----------------------------#
